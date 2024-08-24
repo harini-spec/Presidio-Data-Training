@@ -1,0 +1,5 @@
+Task: Design a Data Lake for an educational institution to store and analyze data from various sources such as student information systems, 
+online learning platforms, and feedback forms.
+Folder Structure: Propose a folder structure that includes student data, course materials, assessments, and feedback.
+Data Security and Privacy: Discuss methods to secure student data, ensure privacy, and comply with regulations such as FERPA.
+Integration and Analytics: Suggest methods to integrate real-time data from online learning platforms and analyze it to identify students at risk of falling behind.

@@ -1,0 +1,21 @@
+Pipeline - grouping of activities
+
+Activity 
+    - Copy activity - copy from sql server to azure blob
+    - Data Flow activity - process and transform data, then send to Azure Synapse Analytics pool where reportings are done 
+
+Major 3 grouping of activities:
+    - Data movement 
+    - Data Transformation
+    - Control flow activities - Execute pipeline, append variable, filter, foreach, if 
+
+https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipelines-activities?tabs=data-factory
+
+Parameters:
+    Parameters are defined at the pipeline level, and cannot be modified during a pipeline run
+    Ex: connection details for a dataset 
+    
+Variables:
+    Pipeline variables are values that can be set and modified during a pipeline run. 
+    They can be set and modified within a pipeline using a Set Variable activity.
+    Ex: flags
