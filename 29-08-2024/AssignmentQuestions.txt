@@ -1,0 +1,5 @@
+Assignment:
+    Compare components in ADF and Talend - similarities and differences 
+    Scenarios where ETL tools can be used 
+    ETL and ELT - similarities and differences 
+    ETL tool - SSIS (Microsoft) - Similarity and diff btw SSIS and ADF 

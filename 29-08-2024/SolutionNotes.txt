@@ -1,0 +1,56 @@
+ETL tools scenarios:
+    Data warehousing - centralized repo of all data 
+    Data Migration - Migrate data from legacy system to new repo schema 
+    Business intelligence - Dashboards and reports 
+    Real time data monitoring 
+    Social media data analysed for trends - Transform for analysis and load to hadoop or data lake 
+
+ETL vs ELT:
+    ETL - Transformation in intermediate staging area or ETL server 
+        - Involves batch processing - data latency in loading 
+        - Confidentiality or anonymity of data - first transformed then stored 
+        - Ex: 
+            - Retail customer 360
+            - Financial analysis in bank 
+    ELT - Transformation in the target system , leverages processing power of target system 
+        - Supports both batch and real time processing 
+        - not enough transforming power in transforming system - go for ELT 
+        - Ex: 
+            - Social media trends using real time data - sentiment analysis 
+            - Global e-commerce stores raw data in lake and analyses trends accordingly 
+
+SSIS vs ADF:
+    SSIS: 
+        - Old - came first
+        - Not cloud based  
+        - On premise
+        - source and dest are limited
+        - Integrated with SQL server 
+        - cases needing complex, server-based ETL processes 
+        - Not veru scalable - can do vertical scaling
+        - Used by companies who can't move their data completely to cloud as of yet 
+
+    ADF:
+        - New one 
+        - Cloud based 
+        - can accomodate multiple sources and destinations 
+        - Cloud native tool - cloud and on-premise data 
+        - More flexible 
+        - Highly scalable - horizontal scaling 
+        - Integrates seemlessly with other Azure services 
+        - cases where there is need to manage large-scale, hybrid, or cloud-only data workflows
+
+ADF vs Talend:
+    ADF: 
+        - Organized around activities and datasets 
+        - Data transformation - using data flow activities or external services like azure databricks 
+    
+    Talend:
+        - Organized around components 
+        - Components are functions. Multiple components join together to form a job 
+        - Built in transformation components 
+        - Java and python to transform data 
+
+Talend  - when u want to work with data from unexplored sources 
+        - less know data sources and targets
+ADF     - when mostly from Azure 
